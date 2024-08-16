@@ -1,0 +1,117 @@
+.body,
+html {
+    margin: 0%;
+    padding: 0%;
+}
+
+.reForm{
+    width: 1200px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 0;
+    height: 20px;
+    
+    background: seagreen;
+    transition: .3s ease-in;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.hnav{
+    background-color: #be174f;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    padding: 20px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e91e63;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 20px;
+    color: white;
+}
+
+header img{
+    width: 200px;
+    height: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    padding: 3px;
+}
+
+input[type=email],input[type=password],input[type=text],input[type=datetime-local]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    width: 600px;
+    font-size: 1.2rem;
+}
+
+.sex,.status{
+    display: flex;
+    
+}
+
+.radioB{
+    padding-left: 10px;
+}
+
+input[type=checkbox]{
+    transform: scale(1.5);
+    margin: 10px;
+}
+
+button {
+    background-color: #be174f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #504f4f;
+}

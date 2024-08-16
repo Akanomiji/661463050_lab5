@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/reStyle.css">
+</head>
+
+<body>
+    <header class="hnav">
+    <nav class="navbar">
+        <a href="/index.html">ย้อนกลับ</a>
+    </nav>
+    </header>
+    <div class="reForm">
+        <header>
+            <h1>ลงทะเบียนผู้ใช้งาน</h1>
+            <img src="./images/images.jfif" alt="">
+        </header>
+        <form action="" class="register">
+            <label for="email">รหัสผู้ใช้</label>
+            <input type="email" name="" id="email" size="100" maxlength="40" required placeholder="mail@address.com">
+
+
+            <label for="Pass">รหัสผ่าน</label>
+            <input type="password" name="Pass" size="100" maxlength="20" required placeholder="รหัสผ่าน">
+
+
+            <label for="Confirm">ยืนยันรหัสผ่าน</label>
+            <input type="password" name="Confirm" size="100" maxlength="20" required placeholder="ยืนยันรหัสผ่าน">
+
+
+            <label for="Fullname">ชื่อ-นามสกุล</label>
+            <input type="text" name="Fullname" size="100" maxlength="50" required placeholder="ชื่อ-นามสกุล">
+
+
+            <label for="birth">วันเกิด</label>
+            <input type="datetime-local" name="birth" id="" size="100" required>
+
+
+            <label for="age">อายุ</label>
+            <input type="text" name="age" size="100" maxlength="3" placeholder="อายุ" required>
+
+
+            <label for="sex">เพศ</label>
+            <div class="sex">
+                <label class="radioB"><input type="radio" name="sex" value="ชาย" required> ชาย</label>
+                <label class="radioB"><input type="radio" name="sex" value="หญิง"> หญิง</label>
+            </div>
+
+            <label for="status">สถานภาพ</label>
+            <div class="status">
+                <label class="radioB"><input type="radio" name="status" value="โสด" required> โสด</label>
+                <label class="radioB"><input type="radio" name="status" value="แต่งงาน"> แต่งงาน</label>
+                <label class="radioB"><input type="radio" name="status" value="หย่าร้าง"> หย่าร้าง</label>
+            </div>
+
+
+            <label for="height">ส่วนสูง <Input type="range" id="height" name="height" min="0" max="250" value="155" required
+                onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+            <span id="height-value">155</span>cm</label>
+            
+
+            <label for="type">ประเภทผู้ใช้</label>
+            <select id="type" name="type">
+                <option value="student">นักศึกษา</option>
+                <option value="teacher">อาจารย์</option>
+                <option value="staff">เจ้าหน้าที่</option>
+                <option value="general">ผู้ใช้ทั่วไป</option>
+            </select>
+
+
+            <label><input type="checkbox" name="ฉันยอมรับเงื่อนไขการใช้งาน" required> ฉันยอมรับเงื่อนไขการใช้งาน</label>
+
+            <button type="submit">ยืนยันการสมัครสมาชิก</button>
+            <button type="reset">เคลียร์</button>
+
+        </form>
+    </div>
+    <script type="text/javascript">
+        function rangeSlide(value) {
+            document.getElementById('height-value').innerHTML = value;
+        }
+    </script>
+</body>
+
+</html>
