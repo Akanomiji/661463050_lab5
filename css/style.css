@@ -49,6 +49,10 @@ body {
     overflow-x: hidden;
 }
 
+.re{
+    float: inline-end;
+}
+
 p {
     line-height: 25px;
 }
